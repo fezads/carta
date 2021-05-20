@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: rgb(69,69,69);
+    background: linear-gradient(315deg, rgba(69,69,69,1) 0%, rgba(48,48,48,1) 100%);
+    font-size: 24px;
+    font-family: "Gochi Hand", cursive;
+    line-height: 1.5;
+}
+
+p {
+    margin-top: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.letter {
+    padding: 1.5rem;
+    border: .75rem solid white;
+    border-image: repeating-linear-gradient( 45deg, #ec1f1e, #ec1f1e 15px, #fff 15px, #fff 30px, #00afee 30px, #00afee 45px, #fff 45px, #fff 60px) 10;
+    background: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.header__content {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.header__stamp {
+    flex-shrink: 0;
+    width: 100px;
+    margin-left: 1rem;
+}
+
+.header__stamp img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    color: #fff;
+    font-size: .8rem;
+    font-family: Arial, sans-serif;
+}
+
+.footer__content {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.footer__content p {
+    margin: 0;
+}
+
+.footer__links {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.footer__links a {
+    display: block;
+    margin-left: 1rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #ec1f1e;
+    text-decoration: none;
+    transition: background-color .5s;
+}
+
+.footer__links a:hover {
+    background-color: #00afee;
+}
